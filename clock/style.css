@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color:teal;
+    text-align: center;
+}
+
+#clock {
+    color: lightcoral;
+    margin-top: 30vh;
+    font-size: 25vh;
+    font-weight: bold;
+}

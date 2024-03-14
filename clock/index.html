@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clock"></div>
+    <script>
+        // Функция для запуска часов при загрузке страницы
+        window.onload = function() {
+            window.setInterval(function(){
+                var date = new Date();
+
+                var hours = ("0" + date.getHours()).substr(-2);
+                var minutes = ("0" + date.getMinutes()).substr(-2);
+                var second = ("0" + date.getSeconds()).substr(-2);
+
+                var clock = hours + ':' + minutes + ':' + second; 
+
+                // вызываем функцию и присваеваем div переменную clock
+                document.getElementById('clock').innerHTML = clock; 
+            });
+        }
+    </script>
+</body>
+</html>
